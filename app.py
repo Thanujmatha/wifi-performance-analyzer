@@ -1,7 +1,7 @@
 import streamlit as st, pandas as pd, json, os
 from datetime import datetime
 from network_tests import DEFAULT_TARGETS, get_wifi_info, run_suite
-from src.report_utils import create_pdf
+from report_utils import create_pdf
 
 st.set_page_config(page_title='Wi-Fi TestLab',page_icon='📶',layout='wide')
 BASE=os.path.dirname(__file__); REPORT_DIR=os.path.join(BASE,'reports'); os.makedirs(REPORT_DIR,exist_ok=True)
